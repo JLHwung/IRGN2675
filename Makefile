@@ -1,2 +1,2 @@
 all:
-	latexmk -lualatex main
+	latexmk -xelatex main
