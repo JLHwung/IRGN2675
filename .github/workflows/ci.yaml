@@ -1,0 +1,20 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            apk add make
+            make
+      - uses: actions/upload-artifact@v2
+        with:
+          name: artifact
+          path: main.pdf
+  

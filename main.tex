@@ -1,0 +1,326 @@
+% !TEX program = xelatex
+
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage[AutoFallBack=true]{xeCJK}
+\setmainfont[Path=fonts/, BoldFont=*-Bold, UprightFont=*-regular, ItalicFont=*-It]{MinionPro}
+\xeCJKDeclareSubCJKBlock{BSHPUA}{"E000 -> "F800}
+\xeCJKDeclareSubCJKBlock{ExtH}{"31350 -> "323AF}
+\setCJKmainfont[Path=fonts/,BSHPUA=BabelStoneHanPUA,ExtH=BabelStoneHan]{BabelStoneHanBeta.ttf}
+\setCJKfallbackfamilyfont{\CJKrmdefault}[Path=fonts/]{BabelStoneHanBeta.ttf}
+
+\usepackage[vmargin=1in,hmargin=0.5in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{ISO/IEC JTC1/SC2/WG2/IRG N2675}
+\lhead{Universal Multiple-Octet Coded Character Set}
+\cfoot{\thepage}
+\usepackage{caption}
+\usepackage[pdfusetitle, CJKbookmarks]{hyperref}
+\hypersetup{pdfauthor=Huáng Jùnliàng (黃俊亮)}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{cite}
+\usepackage{float}
+
+\begin{document}
+
+\title{Request to add seven new UCVs}
+\author{Huáng Jùnliàng (黃俊亮)}
+
+\newcommand{\HUGE}{\fontsize{72}{72}\selectfont}
+
+\makeatletter
+\begin{tabular}{l l}
+Doc Type: & Working Group Document \\
+
+Title: & \@title\footnotemark \\
+
+Source: & \@author \\
+
+Status: & Individual contribution \\
+
+Action required: & To be considered by the IRG \\
+
+Date: & \today \\
+\end{tabular}
+\makeatother
+\footnotetext{Sources of this document are available online: \url{https://github.com/JLHwung/IRGN2675}.}
+
+\section{留畱𤲢}
+
+\begin{table}[H]
+\centering
+{
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{ccc}
+        \hline
+            1 & 2 & 3 \\
+            \hline
+            {\HUGE 留} & {\HUGE 畱} & {\HUGE 𤲢} \\[12pt]
+            \hline
+            U+7559 & U+7571 & U+24CA2 \\
+            \hline
+            GHTJKPV & GTJKPV & T \\
+        \hline
+    \end{tabular}
+}
+\end{table}
+
+Here are disunified examples. They share the readings and the meanings. Hence we suggest a level 1 UCV for 留畱𤲢.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+7559 留} & \multicolumn{2}{c|}{U+7571 畱} & \multicolumn{2}{c|}{U+24A7E 𤲢} \\
+        \hline
+        U+3A28 & 㨨 & U+3A45 & 㩅 & & \\
+        U+586F & 塯 & U+3667 & 㙧 & & \\
+        U+5EC7 & 廇 & U+222BA & 𢊺 & & \\
+        U+69B4 & 榴 & U+6A4A & 橊 & & \\
+        U+6E9C & 溜 & U+6F91 & 澑 & & \\
+        U+7460 & 瑠 & U+74A2 & 璢 & U+24A7E & 𤩾 \\
+        U+7624 & 瘤 & & & U+30906 & 𰤆 \\
+        U+905B & 遛 & U+285BB & 𨖻 & & \\
+        U+9724 & 霤 & U+29178 & 𩅸 & & \\
+        U+9DB9 & 鶹 & U+2A173 & 𪅳 & & \\
+        U+2254D & 𢕍 & U+22532 & 𢔲 & & \\
+        U+22793 & 𢞓 & U+2D7AC & 𭞬 (〾⿰忄畱) & & \\
+        U+24811 & 𤠑 & U+2487C & 𤡼 (〾⿰犭畱) & & \\
+        U+256C5 & 𥛅 & U+256FD & 𥛽 & & \\
+        U+25837 & 𥠷 & U+2588B & 𥢋 & & \\
+        U+259E5 & 𥧥 & U+25A0C & 𥨌 & & \\
+        U+267A7 & 𦞧 & U+2681D & 𦠝 & & \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section{刧刼劫}
+
+\begin{table}[H]
+    \centering
+    {
+        \setlength{\tabcolsep}{12pt}
+        \begin{tabular}{ccc}
+            \hline
+                1 & 2 & 3 \\
+                \hline
+                {\HUGE 刧} & {\HUGE 刼} & {\HUGE 劫} \\[12pt]
+                \hline
+                U+5227 & U+523C & U+52AB \\
+                \hline
+                GHTJKPV & GHTKJP & GHTJKPV \\
+            \hline
+        \end{tabular}
+    }
+    \end{table}
+
+Here are disunified examples. They share the readings and the meanings. Hence we suggest a level 1 UCV for 刧刼劫. Note that this UCV does not include U+5226 刦 because 刀 and 刂 is not unifiable.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+5227 刧} & \multicolumn{2}{c|}{U+523C 刼} & \multicolumn{2}{c|}{U+52AB 劫} \\
+        \hline
+        U+272E4 & 𧋤 & & & U+8710 & 蜐 \\
+        & &  U+3958 & 㥘 & U+393C & 㤼 \\
+        & & U+20268 & 𠉨 & U+2CF86 & 𬾆 \\
+        & & U+289F6 & 𨧶 & U+289B2 & 𨦲 \\
+        & & U+2BF45 & 𫽅 & U+22B31 & 𢬱 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+
+\section{辛𨐌}
+
+\begin{table}[H]
+\centering
+{
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{cc}
+        \hline
+            1 & 2 \\
+            \hline
+            {\HUGE 辛} & {\HUGE 𨐌} \\[12pt]
+            \hline
+            U+8F9B & U+2840C \\
+            \hline
+            GHTJKPV & GTJ \\
+        \hline
+    \end{tabular}
+}
+\end{table}
+
+Here are disunified examples. They share the readings and the meanings. Hence we suggest a level 1 UCV for 辛𨐌.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+8F9B 辛} & \multicolumn{2}{c|}{U+2840C 𨐌} \\
+        \hline
+        U+89EA & 觪 & U+278FF & 𧣿 \\
+        U+8F9F & 辟 & U+2E77B & 𮝻 \\
+        U+2B2C1 & 𫋁 & U+2E51D & 𮔝 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section{𣬉}
+
+\begin{table}[H]
+    \centering
+    {
+        \setlength{\tabcolsep}{12pt}
+        \begin{tabular}{ccc}
+            \hline
+                1 & 2 \\
+                \hline
+                {\HUGE 𣬉} & {\HUGE } \\[12pt]
+                \hline
+                U+23B09 & Unencoded \\
+                \hline
+                GTV &  \\
+            \hline
+        \end{tabular}
+    }
+    \end{table}
+
+Here are disunified examples. They share the readings and the meanings. In some cases  can also be a variant of 㲋, e.g. U+235F8 𣗸 is a variant of U+23535 𣔵. Therefore we suggest level 2 UCV for 𣬉. Note that the unification request for 𲇚 with 鎞 was also brought up by Henry Chan during the WS2017 review\footnote{For more information, see \url{https://hc.jsecs.org/irg/ws2017/app/?id=04445}}.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+23B09 𣬉} & \multicolumn{2}{c|}{Unencoded }  \\
+        \hline
+        U+3521 & 㔡 & U+20892 & 𠢒 \\
+        U+3BB0 & 㮰 & U+235FD & 𣗽 \\
+        U+5AB2 & 媲 & U+5AD3 & 嫓 \\
+        U+818D & 膍 & U+2DA44 & 𭩄 \\
+        U+8C94 & 貔 & U+27D00 & 𧴀 \\
+        U+939E & 鎞 & U+321DA & 𲇚 \\
+        U+2A106 & 𪄆 & U+2A122 & 𪄢 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+Although  is not yet encoded, the proposed UCV does not imply that , as a standalone character, should be unified to 𣬉. Quite the opposite I suggest we encode  separately as it will be useful as an IDS component in the encoded characters mentioned above.
+
+\section{屑㞕}
+
+\begin{table}[H]
+    \centering
+    {
+        \setlength{\tabcolsep}{12pt}
+        \begin{tabular}{ccc}
+            \hline
+                1 & 2 \\
+                \hline
+                {\HUGE 屑} & {\HUGE 㞕} \\[12pt]
+                \hline
+                U+5C51 & U+3795 \\
+                \hline
+                GHTJKP & GTP \\
+            \hline
+        \end{tabular}
+    }
+    \end{table}
+
+Here are disunified examples. They share the readings and the meanings. Hence we suggest a level 1 UCV for 屑㞕.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+5C51 屑} & \multicolumn{2}{c|}{U+3795 㞕} \\
+        \hline
+        U+698D & 榍 & U+2354B & 𣕋 \\
+        U+2A64C & 𪙌 & U+2A647 & 𪙇 \\
+        U+2A651 & 𪙑 & U+2A646 & 𪙆 \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section{隸隷𨽻𨽾𫕙}
+
+\begin{table}[H]
+\centering
+{
+    \begin{tabular}{ccccc}
+        \hline
+            1 & 2 & 3 & 4 & 5\\
+            \hline
+            {\HUGE 隷} & {\HUGE 隸} & {\HUGE 𨽻} & {\HUGE 𨽾} & {\HUGE 𫕙}\\[12pt]
+            \hline
+            U+96B7 & U+96B8 & U+28F7B & U+28F7E & U+2B559 \\
+            \hline
+            GTJKP & GHTJKP & GT & G & T \\
+        \hline
+    \end{tabular}
+}
+\end{table}
+
+Here are disunified examples. They share the readings and the meanings. Hence we suggest a level 1 UCV for 隸隷𨽻𨽾𫕙.
+Note that this UCV can combine with UCV \#435 to handle other variants, such as .
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|l|X|l|X|l|X|l|X|l|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+96B7 隷} & \multicolumn{2}{c|}{U+96B8 隸} & \multicolumn{2}{c|}{U+28F7B 𨽻} & \multicolumn{2}{c|}{U+28F7E 𨽾} & \multicolumn{2}{c|}{U+2B559 𫕙} \\
+        \hline
+        U+3611 & 㘑 & & & U+2D2FA & 𭋺 & U+2D31A & 𭌚 & & \\
+        U+22E00 & 𢸀 & & & U+2D8BF & 𭢿 & & & & \\
+        U+237CC & 𣟌 & U+2AD1B & 𪴛 & & & & & & \\
+        U+240C0 & 𤃀 & U+2DCEC & 𭳬 & & & & & U+240B0 & 𤂰\\
+        & & U+2533F & 𥌿 & U+25324 & 𥌤 & & & & \\
+        U+25DBE & 𥶾 & U+25DD7 & 𥷗 & & & & & & \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section{寕𡨴}
+
+\begin{table}[H]
+    \centering
+    {
+        \setlength{\tabcolsep}{12pt}
+        \begin{tabular}{ccc}
+            \hline
+                1 & 2 \\
+                \hline
+                {\HUGE 寕} & {\HUGE 𡨴} \\[12pt]
+                \hline
+                U+5BD5 & U+21A34 \\
+                \hline
+                GHT & GHTP \\
+            \hline
+        \end{tabular}
+    }
+    \end{table}
+
+There are currently no disunified examples, but they are all variants of 寧. When used as a component, they share the readings and the meanings. Hence we suggest a level 1 UCV for 寕𡨴. This UCV is similar to the UCV \#267.
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{U+5BE7 寧} & \multicolumn{2}{c|}{U+5BD5 寕} & \multicolumn{2}{c|}{U+21A34 𡨴} \\
+        \hline
+        U+45FF & 䗿 & U+2E53E & 𮔾 & & \\
+        U+6FD8 & 濘 & U+2C23F & 𬈿 & & \\
+        U+8079 & 聹 & U+265F0 & 𦗰 & & \\
+        U+85B4 & 薴 & U+2C78A & 𬞊 & & \\
+        U+944F & 鑏 & U+28B4B & 𨭋 & & \\
+        U+9E0B & 鸋 & & & U+2A162 & 𪅢 \\
+        U+261AD & 𦆭 & U+2615C & 𦅜 & & \\
+        U+27C17 & 𧰗 & U+2B384 & 𫎄 & & \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\section*{Acknowledgement}
+Many thanks to Andrew West for reviewing the document and providing font support. I also appreciate the very helpful feedback from Eiso Chan and John Knightley.
+\vfill
+(End of Document)
+
+\end{document}
