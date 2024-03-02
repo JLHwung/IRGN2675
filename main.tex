@@ -7,8 +7,9 @@
 \setmainfont[Path=fonts/, BoldFont=*-Bold, UprightFont=*-regular, ItalicFont=*-It]{MinionPro}
 \xeCJKDeclareSubCJKBlock{BSHPUA}{"E000 -> "F800}
 \xeCJKDeclareSubCJKBlock{ExtH}{"31350 -> "323AF}
-\setCJKmainfont[Path=fonts/,BSHPUA=BabelStoneHanPUA,ExtH=BabelStoneHan]{BabelStoneHanBeta.ttf}
-\setCJKfallbackfamilyfont{\CJKrmdefault}[Path=fonts/]{BabelStoneHanBeta.ttf}
+\setCJKfamilyfont{BabelStoneHan}[Path=fonts/]{BabelStoneHan.ttf}
+\setCJKfamilyfont{BabelStoneHanPUA}[Path=fonts/]{BabelStoneHanPUA.ttf}
+\setCJKmainfont[Path=fonts/, ExtH=BabelStoneHan]{BabelStoneHanBeta.ttf}
 
 \usepackage[vmargin=1in,hmargin=0.5in]{geometry}
 \usepackage{fancyhdr}
@@ -17,13 +18,11 @@
 \rhead{ISO/IEC JTC1/SC2/WG2/IRG N2675}
 \lhead{Universal Multiple-Octet Coded Character Set}
 \cfoot{\thepage}
-\usepackage{caption}
 \usepackage[pdfusetitle, CJKbookmarks]{hyperref}
 \hypersetup{pdfauthor=Huáng Jùnliàng (黃俊亮)}
-\usepackage{graphicx}
-\graphicspath{{./images/}}
 \usepackage{cite}
 \usepackage{float}
+\usepackage{bookmark}
 
 \begin{document}
 
